@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>whazzup_genelator</title>
+    <script type="module" src="/main.js" defer></script>
+  </head>
+
+  <body>
+    <table>
+      <tbody>
+        <tr>
+          <td>callsign</td>
+          <td><input id="call" type="text" value="JAL320"></td>
+        </tr>
+        <tr>
+          <td>pilot name</td>
+          <td><input id="name" type="text" value="kumasan"></td>
+        </tr>
+        <tr>
+          <td>latitude</td>
+          <td><input id="lat" type="number" value="42.0979427189296"></td>
+        </tr>
+        <tr>
+          <td>longitude</td>
+          <td><input id="lon" type="number" value="140.560752021748"></td>
+        </tr>
+        <tr>
+          <td>altitude</td>
+          <td><input id="alt" type="number" value="5000" step="100"></td>
+        </tr>
+        <tr>
+          <td>speed</td>
+          <td><input id="spd" type="number" value="250"></td>
+        </tr>
+        <tr>
+          <td>aircraft</td>
+          <td><input id="type" type="text" value="A320"></td>
+        </tr>
+        <tr>
+          <td>squawk</td>
+          <td><input id="squawk" type="number" value="1301"></td>
+        </tr>
+        <tr>
+          <td>flight rule</td>
+          <td><select id="rule" name="rule">
+            <option value="IFR">IFR</option>
+            <option value="VFR">VFR</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td>route</td>
+          <td><input id="route" type="text" value="FPL"></td>
+        </tr>
+        <tr>
+          <td>heading</td>
+          <td><input id="hdg" type="number" value="320" step="10"></td>
+        </tr>
+      </tbody>
+    </table>
+    <button id="write_button">Write!</button>
+    <p id="result"></p>
+  </body>
+</html>
